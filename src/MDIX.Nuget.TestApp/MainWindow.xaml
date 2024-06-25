@@ -155,5 +155,24 @@
                 </ToggleButton.Style>
             </ToggleButton>
         </StackPanel>
+
+        <StackPanel
+            Grid.Row="4"
+            Grid.Column="2"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center">
+            <Label
+                Margin="0,0,0,16"
+                HorizontalAlignment="Center"
+                Content="EnableClearType = True, RenderAtScale = 1, SnapsToDevicePixels = True" />
+
+            <ToggleButton Width="128">
+                <ToggleButton.Style>
+                    <Style BasedOn="{StaticResource MaterialDesignSwitchToggleButton}" TargetType="ToggleButton">
+                        <Setter Property="wpf:ShadowAssist.CacheMode" Value="{x:Null}" />
+                    </Style>
+                </ToggleButton.Style>
+            </ToggleButton>
+        </StackPanel>
     </Grid>
 </Window>
