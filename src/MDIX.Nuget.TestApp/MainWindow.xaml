@@ -164,7 +164,7 @@
             <Label
                 Margin="0,0,0,16"
                 HorizontalAlignment="Center"
-                Content="EnableClearType = True, RenderAtScale = 1, SnapsToDevicePixels = True" />
+                Content="CacheMode = x:Null" />
 
             <ToggleButton Width="128">
                 <ToggleButton.Style>
