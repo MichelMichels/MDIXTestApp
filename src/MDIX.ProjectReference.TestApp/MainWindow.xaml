@@ -11,9 +11,99 @@
     Height="450"
     Style="{StaticResource MaterialDesignWindow}"
     mc:Ignorable="d">
-    <Grid>
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-            <ToggleButton Width="128" />
-        </StackPanel>
-    </Grid>
+    <DockPanel>
+        <TabControl
+            x:Name="TC_1"
+            Height="100"
+            VerticalAlignment="Bottom"
+            HorizontalContentAlignment="Center"
+            materialDesign:RippleAssist.RippleOnTop="True"
+            DockPanel.Dock="Top"
+            Style="{StaticResource MaterialDesignFilledTabControl}"
+            TabStripPlacement="Top">
+            <TabItem Height="100" Visibility="Visible">
+                <TabItem.Header>
+                    <TextBlock Text="Tab 1" />
+                </TabItem.Header>
+            </TabItem>
+            <TabItem Height="100">
+                <TabItem.Header>
+                    <TextBlock Text="Tab 2" />
+                </TabItem.Header>
+            </TabItem>
+
+            <TabItem Height="100">
+                <TabItem.Header>
+                    <TextBlock Text="Tab 3" />
+                </TabItem.Header>
+            </TabItem>
+        </TabControl>
+
+
+        <materialDesign:Transitioner
+            AutoApplyTransitionOrigins="True"
+            DockPanel.Dock="Bottom"
+            SelectedIndex="{Binding ElementName=TC_1, Path=SelectedIndex, Mode=Default}">
+
+            <!--  Slide 1  -->
+            <materialDesign:TransitionerSlide>
+                <materialDesign:TransitionerSlide.ForwardWipe>
+                    <materialDesign:FadeWipe Duration="0:0:1.1" />
+                </materialDesign:TransitionerSlide.ForwardWipe>
+
+                <materialDesign:TransitionerSlide.BackwardWipe>
+                    <materialDesign:FadeWipe Duration="0:0:1.1" />
+                </materialDesign:TransitionerSlide.BackwardWipe>
+
+                <Grid>
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        FontSize="55"
+                        Foreground="Teal"
+                        Text="Tab 1" />
+                </Grid>
+            </materialDesign:TransitionerSlide>
+
+            <!--  Slide 2  -->
+            <materialDesign:TransitionerSlide>
+                <materialDesign:TransitionerSlide.ForwardWipe>
+                    <materialDesign:FadeWipe Duration="0:0:1.1" />
+                </materialDesign:TransitionerSlide.ForwardWipe>
+
+                <materialDesign:TransitionerSlide.BackwardWipe>
+                    <materialDesign:FadeWipe Duration="0:0:1.1" />
+                </materialDesign:TransitionerSlide.BackwardWipe>
+
+                <Grid>
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        FontSize="55"
+                        Foreground="Teal"
+                        Text="Tab 2" />
+                </Grid>
+            </materialDesign:TransitionerSlide>
+
+            <!--  Slide 3  -->
+            <materialDesign:TransitionerSlide>
+                <materialDesign:TransitionerSlide.ForwardWipe>
+                    <materialDesign:FadeWipe Duration="0:0:1.1" />
+                </materialDesign:TransitionerSlide.ForwardWipe>
+
+                <materialDesign:TransitionerSlide.BackwardWipe>
+                    <materialDesign:FadeWipe Duration="0:0:1.1" />
+                </materialDesign:TransitionerSlide.BackwardWipe>
+
+                <Grid>
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        FontSize="55"
+                        Foreground="Teal"
+                        Text="Tab 3" />
+                </Grid>
+            </materialDesign:TransitionerSlide>
+        </materialDesign:Transitioner>
+    </DockPanel>
 </Window>
