@@ -60,21 +60,15 @@
             <Label
                 Margin="0,0,0,16"
                 HorizontalAlignment="Center"
-                Content="EnableClearType = False, RenderAtScale = 1, SnapsToDevicePixels = False" />
+                Content="RenderAtScale = 1" />
 
             <ToggleButton Width="128">
-                <ToggleButton.Style>
-                    <Style BasedOn="{StaticResource MaterialDesignSwitchToggleButton}" TargetType="ToggleButton">
-                        <Setter Property="wpf:ShadowAssist.CacheMode">
-                            <Setter.Value>
-                                <BitmapCache
-                                    EnableClearType="False"
-                                    RenderAtScale="1"
-                                    SnapsToDevicePixels="False" />
-                            </Setter.Value>
-                        </Setter>
-                    </Style>
-                </ToggleButton.Style>
+                <ToggleButton.CacheMode>
+                    <BitmapCache
+                        EnableClearType="True"
+                        RenderAtScale="1"
+                        SnapsToDevicePixels="True" />
+                </ToggleButton.CacheMode>
             </ToggleButton>
         </StackPanel>
 
@@ -87,7 +81,7 @@
             <Label
                 Margin="0,0,0,16"
                 HorizontalAlignment="Center"
-                Content="EnableClearType = True, RenderAtScale = 1, SnapsToDevicePixels = False" />
+                Content="RenderAtScale = 2" />
 
             <ToggleButton Width="128">
                 <ToggleButton.Style>
@@ -96,8 +90,8 @@
                             <Setter.Value>
                                 <BitmapCache
                                     EnableClearType="True"
-                                    RenderAtScale="1"
-                                    SnapsToDevicePixels="False" />
+                                    RenderAtScale="2"
+                                    SnapsToDevicePixels="True" />
                             </Setter.Value>
                         </Setter>
                     </Style>
@@ -113,7 +107,7 @@
             <Label
                 Margin="0,0,0,16"
                 HorizontalAlignment="Center"
-                Content="EnableClearType = False, RenderAtScale = 1, SnapsToDevicePixels = True" />
+                Content="RenderAtScale = 3" />
 
             <ToggleButton Width="128">
                 <ToggleButton.Style>
@@ -121,8 +115,8 @@
                         <Setter Property="wpf:ShadowAssist.CacheMode">
                             <Setter.Value>
                                 <BitmapCache
-                                    EnableClearType="False"
-                                    RenderAtScale="1"
+                                    EnableClearType="True"
+                                    RenderAtScale="3"
                                     SnapsToDevicePixels="True" />
                             </Setter.Value>
                         </Setter>
@@ -133,12 +127,13 @@
 
         <StackPanel
             Grid.Row="4"
+            Grid.Column="0"
             HorizontalAlignment="Center"
             VerticalAlignment="Center">
             <Label
                 Margin="0,0,0,16"
                 HorizontalAlignment="Center"
-                Content="EnableClearType = True, RenderAtScale = 1, SnapsToDevicePixels = True" />
+                Content="RenderAtScale = 4" />
 
             <ToggleButton Width="128">
                 <ToggleButton.Style>
@@ -147,7 +142,7 @@
                             <Setter.Value>
                                 <BitmapCache
                                     EnableClearType="True"
-                                    RenderAtScale="1"
+                                    RenderAtScale="4"
                                     SnapsToDevicePixels="True" />
                             </Setter.Value>
                         </Setter>
@@ -164,12 +159,19 @@
             <Label
                 Margin="0,0,0,16"
                 HorizontalAlignment="Center"
-                Content="CacheMode = x:Null" />
+                Content="RenderAtScale = 5" />
 
             <ToggleButton Width="128">
                 <ToggleButton.Style>
                     <Style BasedOn="{StaticResource MaterialDesignSwitchToggleButton}" TargetType="ToggleButton">
-                        <Setter Property="wpf:ShadowAssist.CacheMode" Value="{x:Null}" />
+                        <Setter Property="wpf:ShadowAssist.CacheMode">
+                            <Setter.Value>
+                                <BitmapCache
+                                    EnableClearType="True"
+                                    RenderAtScale="5"
+                                    SnapsToDevicePixels="True" />
+                            </Setter.Value>
+                        </Setter>
                     </Style>
                 </ToggleButton.Style>
             </ToggleButton>
