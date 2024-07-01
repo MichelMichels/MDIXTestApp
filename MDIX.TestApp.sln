@@ -5,6 +5,8 @@ VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MDIX.ProjectReference.TestApp", "src\MDIX.ProjectReference.TestApp\MDIX.ProjectReference.TestApp.csproj", "{7F50FC12-C2FB-4FFF-8EE5-DE626C37C6EF}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MDIX.Nuget.TestApp", "src\MDIX.Nuget.TestApp\MDIX.Nuget.TestApp.csproj", "{C138C240-3BFB-4685-80FB-CE4BAA3715D9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{7F50FC12-C2FB-4FFF-8EE5-DE626C37C6EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F50FC12-C2FB-4FFF-8EE5-DE626C37C6EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F50FC12-C2FB-4FFF-8EE5-DE626C37C6EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C138C240-3BFB-4685-80FB-CE4BAA3715D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C138C240-3BFB-4685-80FB-CE4BAA3715D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C138C240-3BFB-4685-80FB-CE4BAA3715D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C138C240-3BFB-4685-80FB-CE4BAA3715D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
