@@ -46,13 +46,13 @@
             SelectedIndex="{Binding ElementName=TC_1, Path=SelectedIndex, Mode=Default}">
 
             <!--  Slide 1  -->
-            <materialDesign:TransitionerSlide>
+            <materialDesign:TransitionerSlide x:Name="Slide_1">
                 <materialDesign:TransitionerSlide.ForwardWipe>
-                    <materialDesign:FadeWipe Duration="0:0:1.1" />
+                    <materialDesign:FadeWipe />
                 </materialDesign:TransitionerSlide.ForwardWipe>
 
                 <materialDesign:TransitionerSlide.BackwardWipe>
-                    <materialDesign:FadeWipe Duration="0:0:1.1" />
+                    <materialDesign:FadeWipe />
                 </materialDesign:TransitionerSlide.BackwardWipe>
 
                 <Grid>
@@ -66,13 +66,13 @@
             </materialDesign:TransitionerSlide>
 
             <!--  Slide 2  -->
-            <materialDesign:TransitionerSlide>
+            <materialDesign:TransitionerSlide x:Name="Slide_2">
                 <materialDesign:TransitionerSlide.ForwardWipe>
-                    <materialDesign:FadeWipe Duration="0:0:1.1" />
+                    <materialDesign:FadeWipe />
                 </materialDesign:TransitionerSlide.ForwardWipe>
 
                 <materialDesign:TransitionerSlide.BackwardWipe>
-                    <materialDesign:FadeWipe Duration="0:0:1.1" />
+                    <materialDesign:FadeWipe />
                 </materialDesign:TransitionerSlide.BackwardWipe>
 
                 <Grid>
@@ -86,13 +86,13 @@
             </materialDesign:TransitionerSlide>
 
             <!--  Slide 3  -->
-            <materialDesign:TransitionerSlide>
+            <materialDesign:TransitionerSlide x:Name="Slide_3">
                 <materialDesign:TransitionerSlide.ForwardWipe>
-                    <materialDesign:FadeWipe Duration="0:0:1.1" />
+                    <materialDesign:FadeWipe />
                 </materialDesign:TransitionerSlide.ForwardWipe>
 
                 <materialDesign:TransitionerSlide.BackwardWipe>
-                    <materialDesign:FadeWipe Duration="0:0:1.1" />
+                    <materialDesign:FadeWipe />
                 </materialDesign:TransitionerSlide.BackwardWipe>
 
                 <Grid>

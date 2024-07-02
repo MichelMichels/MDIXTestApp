@@ -9,12 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="MaterialDesignColors">
-      <HintPath>..\..\..\MaterialDesignInXamlToolkit\src\MaterialDesignThemes.Wpf\bin\Debug\net8.0-windows\MaterialDesignColors.dll</HintPath>
-    </Reference>
-    <Reference Include="MaterialDesignThemes.Wpf">
-      <HintPath>..\..\..\MaterialDesignInXamlToolkit\src\MaterialDesignThemes.Wpf\bin\Debug\net8.0-windows\MaterialDesignThemes.Wpf.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\..\..\MaterialDesignInXamlToolkit\src\MaterialDesignThemes.Wpf\MaterialDesignThemes.Wpf.csproj" />
   </ItemGroup>
 
 </Project>
