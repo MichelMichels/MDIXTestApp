@@ -12,8 +12,66 @@
     Style="{StaticResource MaterialDesignWindow}"
     mc:Ignorable="d">
     <Grid>
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-            <ToggleButton Width="128" />
-        </StackPanel>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Rectangle
+            Grid.Row="1"
+            Grid.ColumnSpan="3"
+            Height="1"
+            Fill="LightGray" />
+        <Rectangle
+            Grid.RowSpan="3"
+            Grid.Column="1"
+            Width="1"
+            Fill="LightGray" />
+
+        <ComboBox
+            Grid.Row="0"
+            Grid.Column="0"
+            Margin="16">
+            <ComboBoxItem Content="Apple" />
+            <ComboBoxItem Content="Banana" />
+            <ComboBoxItem Content="Pear" />
+            <ComboBoxItem Content="Orange" />
+        </ComboBox>
+        <ComboBox
+            Grid.Row="0"
+            Grid.Column="2"
+            Margin="16">
+            <ComboBoxItem Content="Apple" />
+            <ComboBoxItem Content="Banana" />
+            <ComboBoxItem Content="Pear" />
+            <ComboBoxItem Content="Orange" />
+
+        </ComboBox>
+        <ComboBox
+            Grid.Row="2"
+            Grid.Column="0"
+            Margin="16">
+            <ComboBoxItem Content="Apple" />
+            <ComboBoxItem Content="Banana" />
+            <ComboBoxItem Content="Pear" />
+            <ComboBoxItem Content="Orange" />
+        </ComboBox>
+        <ComboBox
+            Grid.Row="2"
+            Grid.Column="2"
+            Margin="16">
+
+            <ComboBoxItem Content="Apple" />
+            <ComboBoxItem Content="Banana" />
+            <ComboBoxItem Content="Pear" />
+            <ComboBoxItem Content="Orange" />
+        </ComboBox>
+
     </Grid>
 </Window>

@@ -16,8 +16,6 @@
             <RowDefinition />
             <RowDefinition Height="Auto" />
             <RowDefinition />
-            <RowDefinition Height="Auto" />
-            <RowDefinition />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
@@ -26,134 +24,54 @@
         </Grid.ColumnDefinitions>
 
         <Rectangle
-            Grid.Row="0"
-            Grid.RowSpan="5"
+            Grid.Row="1"
+            Grid.ColumnSpan="3"
+            Height="1"
+            Fill="LightGray" />
+        <Rectangle
+            Grid.RowSpan="3"
             Grid.Column="1"
             Width="1"
             Fill="LightGray" />
-        <Rectangle
-            Grid.Row="1"
+
+        <ComboBox
+            Grid.Row="0"
             Grid.Column="0"
-            Grid.ColumnSpan="3"
-            Height="1"
-            Fill="LightGray" />
-        <Rectangle
-            Grid.Row="3"
-            Grid.Column="0"
-            Grid.ColumnSpan="3"
-            Height="1"
-            Fill="LightGray" />
-
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Label
-                Margin="0,0,0,16"
-                HorizontalAlignment="Center"
-                Content="No modification" />
-
-            <ToggleButton Width="128" />
-        </StackPanel>
-
-        <StackPanel
+            Margin="16">
+            <ComboBoxItem Content="Apple" />
+            <ComboBoxItem Content="Banana" />
+            <ComboBoxItem Content="Pear" />
+            <ComboBoxItem Content="Orange" />
+        </ComboBox>
+        <ComboBox
+            Grid.Row="0"
             Grid.Column="2"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Center">
-            <Label
-                Margin="0,0,0,16"
-                HorizontalAlignment="Center"
-                Content="EnableClearType = False, RenderAtScale = 1, SnapsToDevicePixels = False" />
+            Margin="16">
+            <ComboBoxItem Content="Apple" />
+            <ComboBoxItem Content="Banana" />
+            <ComboBoxItem Content="Pear" />
+            <ComboBoxItem Content="Orange" />
 
-            <ToggleButton Width="128">
-                <ToggleButton.Style>
-                    <Style BasedOn="{StaticResource MaterialDesignSwitchToggleButton}" TargetType="ToggleButton">
-                        <Setter Property="wpf:ShadowAssist.CacheMode">
-                            <Setter.Value>
-                                <BitmapCache
-                                    EnableClearType="False"
-                                    RenderAtScale="1"
-                                    SnapsToDevicePixels="False" />
-                            </Setter.Value>
-                        </Setter>
-                    </Style>
-                </ToggleButton.Style>
-            </ToggleButton>
-        </StackPanel>
-
-
-        <StackPanel
+        </ComboBox>
+        <ComboBox
             Grid.Row="2"
             Grid.Column="0"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Center">
-            <Label
-                Margin="0,0,0,16"
-                HorizontalAlignment="Center"
-                Content="EnableClearType = True, RenderAtScale = 1, SnapsToDevicePixels = False" />
-
-            <ToggleButton Width="128">
-                <ToggleButton.Style>
-                    <Style BasedOn="{StaticResource MaterialDesignSwitchToggleButton}" TargetType="ToggleButton">
-                        <Setter Property="wpf:ShadowAssist.CacheMode">
-                            <Setter.Value>
-                                <BitmapCache
-                                    EnableClearType="True"
-                                    RenderAtScale="1"
-                                    SnapsToDevicePixels="False" />
-                            </Setter.Value>
-                        </Setter>
-                    </Style>
-                </ToggleButton.Style>
-            </ToggleButton>
-        </StackPanel>
-
-        <StackPanel
+            Margin="16">
+            <ComboBoxItem Content="Apple" />
+            <ComboBoxItem Content="Banana" />
+            <ComboBoxItem Content="Pear" />
+            <ComboBoxItem Content="Orange" />
+        </ComboBox>
+        <ComboBox
             Grid.Row="2"
             Grid.Column="2"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Center">
-            <Label
-                Margin="0,0,0,16"
-                HorizontalAlignment="Center"
-                Content="EnableClearType = False, RenderAtScale = 1, SnapsToDevicePixels = True" />
+            Margin="16">
 
-            <ToggleButton Width="128">
-                <ToggleButton.Style>
-                    <Style BasedOn="{StaticResource MaterialDesignSwitchToggleButton}" TargetType="ToggleButton">
-                        <Setter Property="wpf:ShadowAssist.CacheMode">
-                            <Setter.Value>
-                                <BitmapCache
-                                    EnableClearType="False"
-                                    RenderAtScale="1"
-                                    SnapsToDevicePixels="True" />
-                            </Setter.Value>
-                        </Setter>
-                    </Style>
-                </ToggleButton.Style>
-            </ToggleButton>
-        </StackPanel>
+            <ComboBoxItem Content="Apple" />
+            <ComboBoxItem Content="Banana" />
+            <ComboBoxItem Content="Pear" />
+            <ComboBoxItem Content="Orange" />
+        </ComboBox>
 
-        <StackPanel
-            Grid.Row="4"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Center">
-            <Label
-                Margin="0,0,0,16"
-                HorizontalAlignment="Center"
-                Content="EnableClearType = True, RenderAtScale = 1, SnapsToDevicePixels = True" />
-
-            <ToggleButton Width="128">
-                <ToggleButton.Style>
-                    <Style BasedOn="{StaticResource MaterialDesignSwitchToggleButton}" TargetType="ToggleButton">
-                        <Setter Property="wpf:ShadowAssist.CacheMode">
-                            <Setter.Value>
-                                <BitmapCache
-                                    EnableClearType="True"
-                                    RenderAtScale="1"
-                                    SnapsToDevicePixels="True" />
-                            </Setter.Value>
-                        </Setter>
-                    </Style>
-                </ToggleButton.Style>
-            </ToggleButton>
-        </StackPanel>
     </Grid>
 </Window>
